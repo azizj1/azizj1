@@ -51,49 +51,11 @@
     <!-- Font -->
     <link rel='dns-prefetch' href='//fonts.googleapis.com'>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
-<link href="/main.css" rel="stylesheet"></head>
+<link href="/lib.css" rel="stylesheet"><link href="/main.css" rel="stylesheet"></head>
 <body data-scroll-animation="true" class="dark-theme">
     <div class="preloader" id="preloader">
         <div class="loader"></div>
     </div>
     <div id="root"></div>
-<script type="text/javascript" src="/vendors~main.js?211b498ba5c7ed7af3d9"></script><script type="text/javascript" src="/main.js?09c895fe6bd55fa2dcb1"></script></body>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var fx = {
-            animate: function(options) {
-                var start = new Date;
-                var id = setInterval(function() {
-                    var timePassed = new Date - start;
-                    var progress = timePassed / options.duration;
-                    if (progress > 1) {
-                        progress = 1;
-                    }
-                    options.progress = progress;
-                    var delta = options.delta(progress);
-                    options.step(delta);
-                    if (progress == 1) {
-                        clearInterval(id);
-                        if (options.complete) options.complete();
-                    }
-                }, options.delay || 10);
-            },
-            fadeOut: function(element, options) {
-                var to = 1;
-                this.animate({
-                    duration: options.duration,
-                    delta: function(progress) {
-                        progress = this.progress;
-                        return 0.5 - Math.cos(progress * Math.PI);
-                    },
-                    complete: options.complete,
-                    step: function(delta) {
-                        element.style.opacity = to - delta;
-                    }
-                });
-            }
-        };
-        fx.fadeOut(document.getElementById('preloader'), { duration: 1000, complete: function() { document.getElementById('preloader').style.display = 'none' } });
-    });
-</script>
+<script type="text/javascript" src="/lib.js?45afc5bd7742549de0fb"></script><script type="text/javascript" src="/vendors~main.js?cfa40a274aa3363039fc"></script><script type="text/javascript" src="/main.js?96b38db9a3f96ae70087"></script></body>
 </html>
