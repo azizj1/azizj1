@@ -450,14 +450,14 @@ body {
 /* ==========================================================================
  * COLORS
  * ========================================================================== */
-._2mav {
+._3AAb {
   padding: 0 0.5em; }
   @media (min-width: 769px) {
-    ._2mav {
+    ._3AAb {
       padding-left: 2em;
       padding-right: 2em; } }
 
-._1va5 {
+._33fZ {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,19 +465,28 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  @media (min-width: 769px) {
-    ._1va5 {
+  ._33fZ ._2_Ke {
+    width: 100%; }
+  ._33fZ ._1Pl-,
+  ._33fZ ._2deW {
+    display: none; }
+  @media (min-width: 992px) {
+    ._33fZ {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row; }
-      ._1va5 ._3ZcN {
+      ._33fZ ._1Pl- {
+        display: block;
         width: 60%; }
-      ._1va5 ._24mG {
+      ._33fZ ._2deW {
+        display: block;
         margin-top: -2em;
         width: 40%; }
-      ._1va5 ._7Ke2 {
-        width: 100%; } }
+      ._33fZ ._3KpO {
+        width: 100%; }
+      ._33fZ ._2_Ke {
+        display: none; } }
 
 .hcCenter {
   display: -webkit-box;
@@ -555,12 +564,11 @@ body {
     fill: #a1a4ab;
     width: 20px;
     height: 20px; }
-  .LD23 > * {
+  .LD23 > div {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
-    height: 3.5em;
-    padding: 8px;
+    height: 5em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -570,12 +578,58 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    .LD23 > div > div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 100%;
+      background: #2f3542;
+      width: 80%;
+      margin: 0 auto 0 2em;
+      border-radius: 5px; }
+      .LD23 > div > div > div._2MT7 {
+        height: 100%;
+        width: 3em;
+        background: #fff;
+        margin-left: 1em;
+        border: 0.1px solid #ddd; }
+        .LD23 > div > div > div._2MT7._3sOZ {
+          background-color: #a8a8a8;
+          color: #dbdbdb;
+          border: 0.1px solid #a8a8a8;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+          .LD23 > div > div > div._2MT7._3sOZ .sicon {
+            fill: #c2c2c2; }
+      .LD23 > div > div > div._1g48 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .LD23 > div > div > div._1g48 > span {
+          color: #59657e;
+          font-size: 0.7em;
+          margin-left: 1em;
+          line-height: 1.3; }
   .LD23 .pVvc {
-    background-color: #f8f8f8;
-    -webkit-box-flex: 5;
-        -ms-flex-positive: 5;
-            flex-grow: 5;
-    border: 1px solid #eee; }
+    background-color: #eee;
+    border: 0.1px solid #ddd; }
   .LD23 .dbjM {
     background-color: #2980b9;
     color: #6ab0de; }
@@ -592,9 +646,20 @@ body {
     .LD23 ._3wXJ .sicon {
       fill: #656565; }
   .LD23 ._3jkM {
-    background-color: #2c3e50;
-    color: #507192; }
+    background-color: #34495e;
+    color: #587ca0; }
     .LD23 ._3jkM .sicon {
-      fill: #3e5871; }
+      fill: #46637f; }
+  .LD23 ._1rWA {
+    -webkit-box-flex: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3; }
+  @media (max-width: 992px) {
+    .LD23 > div {
+      display: none; }
+    .LD23 > div._1rWA {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 
